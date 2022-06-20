@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>WeatherPy Webpage</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="Assets/css/css.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Home
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Factors Analyzed
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="Visualizations/MaxTempNorthSouth.html">Maximum Temperature</a>
+                <a class="dropdown-item" href="Visualizations/HumidityNorthSouth.html">Humidity</a>            
+                <a class="dropdown-item" href="Visualizations/CloudinessNorthSouth.html">Could Cover</a>
+                <a class="dropdown-item" href="Visualizations/WindSpeedNorthSouth.html">Wind Speed</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Visualizations/AllVisuals.html">Compare All Plots</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Viusalizations/Data.html">View All Data</a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="row content">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <h2 class="text-left">WeatherPy Webpage</h2>
+            <hr class="my-4">
+            <img src="Assets/images/Dataset_Locations.png" alt="Cities Included in Study" class="img-fluid">
+            <p>As a follow-on to the WeatherPy and VacationPy assignments, this project summarizes the findings of those exercises on a webpage. 
+            </p>
+            <p>The plots contained on this website represent more than 500 cities around the world and includes meteorlogical data related to temperature, cloud cover, windspeed, and humidity. These factors are analyzed in scatter plots that compare them to a given city's latitude and determine any potential correlation.
+            </p>
+        </div>
+   
+    <div class="row content">
+         <div class="col-lg-12 col-lg-12 col-lg-12" >
+            <h2 class="text-left">Visualizations</h2>
+            <hr class="my-4">
+            <a href="Visualizations/MaxTempNorthSouth.html">
+                <img src="Assets/images/MaxTemp_NorthSouth.png" class="rounded float-left thumbnail" alt="Maximum Temperatures in the Northern and Southern Hemispheres">
+            </a>
+            <a href="Visualizations/HumidityNorthSouth.html">
+                <img src="Assets/images/Humidity_NorthSouth.png" class="rounded float right thumbnail" alt="Humidity in the Northern and Southern Hemispheres">
+            </a>
+            <a href="Visualizations/CloudinessNorthSouth.html">
+                <img src="Assets/images/Clouds_NorthSouth.png" class="rounded float-left  thumbnail" alt="Cloud Cover in the Northern and Southern Hemipheres">
+            </a>
+            <a href="Visualizations/WindSpeedNorthSouth.html">
+                <img src="Assets/images/Wind_NorthSouth.png" class="rounded float right  thumbnail" alt="Windspeed in the Northern and Southern Hemipheres">
+            </a>
+        </div>
+    </div>
+</body>
